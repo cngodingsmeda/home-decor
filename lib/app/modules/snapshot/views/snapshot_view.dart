@@ -25,7 +25,6 @@ class SnapshotView extends GetView<SnapshotController> {
             const Text(
               "HOME",
               style: TextStyle(
-                fontFamily: AllMaterial.fontFamily,
                 color: AllMaterial.colorWhite,
                 fontWeight: AllMaterial.fontSemiBold,
                 fontSize: 60,
@@ -36,7 +35,6 @@ class SnapshotView extends GetView<SnapshotController> {
               style: TextStyle(
                 letterSpacing: 10,
                 fontSize: 30,
-                fontFamily: AllMaterial.fontFamily,
                 color: AllMaterial.colorWhite,
                 fontWeight: AllMaterial.fontRegular,
               ),

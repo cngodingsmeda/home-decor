@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:home_decor/app/routes/app_pages.dart';
 import 'package:home_decor/constant/allmaterial.dart';
 
@@ -10,6 +11,7 @@ import '../controllers/introduction_controller.dart';
 
 class IntroductionView extends GetView<IntroductionController> {
   var introC = Get.put(IntroductionController());
+  var box = GetStorage();
   IntroductionView({super.key});
   @override
   Widget build(BuildContext context) {
@@ -65,7 +67,6 @@ class IntroductionView extends GetView<IntroductionController> {
                                 Text(
                                   "Back",
                                   style: TextStyle(
-                                    fontFamily: AllMaterial.fontFamily,
                                     fontWeight: AllMaterial.fontMedium,
                                   ),
                                 ),
@@ -88,7 +89,6 @@ class IntroductionView extends GetView<IntroductionController> {
                     style: const TextStyle(
                       color: AllMaterial.colorPrimary,
                       fontWeight: AllMaterial.fontSemiBold,
-                      fontFamily: AllMaterial.fontFamily,
                       fontSize: 28,
                     ),
                   ),
@@ -97,7 +97,6 @@ class IntroductionView extends GetView<IntroductionController> {
                 const Text(
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontFamily: AllMaterial.fontFamily,
                     fontWeight: AllMaterial.fontRegular,
                   ),
                   "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -211,7 +210,10 @@ class IntroductionView extends GetView<IntroductionController> {
                               borderRadius: const BorderRadius.all(
                                 Radius.circular(25),
                               ),
-                              onTap: () => Get.offNamed(Routes.HOME),
+                              onTap: () {
+                                Get.offNamed(Routes.HOME);
+                                box.write("introduction", "udah");
+                              },
                               child: Ink(
                                 child: Container(
                                   padding: const EdgeInsets.all(10),
@@ -229,7 +231,6 @@ class IntroductionView extends GetView<IntroductionController> {
                                     "Get Started",
                                     style: TextStyle(
                                       color: AllMaterial.colorBlackSecondary,
-                                      fontFamily: AllMaterial.fontFamily,
                                       fontWeight: AllMaterial.fontSemiBold,
                                       fontSize: 15,
                                     ),
@@ -259,7 +260,6 @@ class IntroductionView extends GetView<IntroductionController> {
                                     "Next",
                                     style: TextStyle(
                                       color: AllMaterial.colorBlackSecondary,
-                                      fontFamily: AllMaterial.fontFamily,
                                       fontWeight: AllMaterial.fontSemiBold,
                                       fontSize: 15,
                                     ),
