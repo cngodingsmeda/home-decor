@@ -35,7 +35,7 @@ class SearchPageView extends GetView<SearchPageController> {
               icon: const Icon(Icons.filter_alt),
               color: AllMaterial.colorBlackSecondary,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   AllMaterial.colorPrimary,
                 ),
               ),

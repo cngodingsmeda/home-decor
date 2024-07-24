@@ -62,7 +62,7 @@ class HomePageView extends GetView<HomePageController> {
                         icon: Icon(MdiIcons.magnify),
                         color: AllMaterial.colorBlackSecondary,
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(
+                          backgroundColor: WidgetStateProperty.all(
                             AllMaterial.colorPrimary,
                           ),
                         ),
@@ -487,14 +487,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -508,14 +508,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -585,14 +585,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -606,14 +606,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -691,14 +691,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -712,14 +712,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -789,14 +789,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),
@@ -810,14 +810,14 @@ class HomePageView extends GetView<HomePageController> {
                                                 color: AllMaterial.colorWhite,
                                                 style: ButtonStyle(
                                                   fixedSize:
-                                                      const MaterialStatePropertyAll(
+                                                      const WidgetStatePropertyAll(
                                                     Size(
                                                       15,
                                                       15,
                                                     ),
                                                   ),
                                                   backgroundColor:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     AllMaterial.colorPrimary,
                                                   ),
                                                 ),

@@ -31,7 +31,7 @@ class CategoriesPageView extends GetView<CategoriesPageController> {
               icon: Icon(MdiIcons.flash),
               color: AllMaterial.colorBlackSecondary,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   AllMaterial.colorPrimary,
                 ),
               ),

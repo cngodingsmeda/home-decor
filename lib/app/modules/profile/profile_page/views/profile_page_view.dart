@@ -32,7 +32,7 @@ class ProfilePageView extends GetView<ProfilePageController> {
               icon: Icon(MdiIcons.accountEditOutline),
               color: AllMaterial.colorBlackSecondary,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   AllMaterial.colorPrimary,
                 ),
               ),

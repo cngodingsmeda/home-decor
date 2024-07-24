@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -7,7 +9,8 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import '../controllers/wishlist_page_controller.dart';
 
 class WishlistPageView extends GetView<WishlistPageController> {
-  const WishlistPageView({super.key});
+  List keranjang = [].obs;
+ WishlistPageView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +35,7 @@ class WishlistPageView extends GetView<WishlistPageController> {
               icon: Icon(MdiIcons.plus),
               color: AllMaterial.colorBlackSecondary,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   AllMaterial.colorPrimary,
                 ),
               ),
@@ -40,7 +43,7 @@ class WishlistPageView extends GetView<WishlistPageController> {
           ),
         ],
       ),
-      body: Center(
+      body: (keranjang.isEmpty) ? Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -60,7 +63,12 @@ class WishlistPageView extends GetView<WishlistPageController> {
             ),
           ],
         ),
-      ),
+      ) : ListView.builder( itemCount: keranjang.length,itemBuilder: (context, index) {
+        return const Card(
+          
+        );
+        
+      },),
     );
   }
 }

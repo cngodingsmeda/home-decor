@@ -33,7 +33,7 @@ class CartPageView extends GetView<CartPageController> {
               icon: Icon(MdiIcons.pencilOutline),
               color: AllMaterial.colorBlackSecondary,
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   AllMaterial.colorPrimary,
                 ),
               ),

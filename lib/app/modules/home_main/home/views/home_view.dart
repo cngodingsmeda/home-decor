@@ -23,7 +23,6 @@ class HomeView extends GetView<HomeController> {
         controller: pageController,
         onPageChanged: (value) {
           controller.currentIndexBar.value = value;
-          
         },
         children: [
           // NAVIGASI HOME
@@ -36,7 +35,7 @@ class HomeView extends GetView<HomeController> {
           const CartPageView(),
 
           // NAVIGASI WISHLIST
-          const WishlistPageView(),
+          WishlistPageView(),
 
           // NAVIGASI PROFILE
           const ProfilePageView(),
